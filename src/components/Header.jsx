@@ -6,7 +6,7 @@ export default function Header() {
             <div className="headerContainer">
                 <div className="logoSection">
                     <img className="troll" src="./public/assets/troll.png" />
-                    <span className="title">MEME GENERATOR</span>
+                    <h2 className="title">MEME GENERATOR</h2>
                 </div>
                 <div className="descriptionSection">
                     <span className="description">Top 10 Meme Generator</span>

@@ -6,6 +6,7 @@
   --gradient-start: #672280;
   --gradient-end: #A626D3;
   --white: #fff;
+  --grey-border: rgb(191, 191, 191);
 }
 
 html, body {
@@ -20,8 +21,14 @@ html, body {
 }
 
 .headerContainer, 
-.logoSection {
+.logoSection,
+.formContainer,
+.mainContainer {
   display: flex;
+}
+
+.headerContainer, 
+.logoSection {
   align-items: center;
 }
 
@@ -53,4 +60,65 @@ html, body {
 
 .description {
   font-size: 20px;
+}
+
+.formContainer {
+  justify-content: center;
+}
+
+.mainContainer {
+  flex-direction: column;
+  justify-content: center;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+.inputs {
+  margin-bottom: 1.5rem;
+}
+
+.inputs > *, 
+button {
+  height: 2.5rem;
+  border-radius: 5px;
+}
+
+.inputs > * {
+  font-size: 1.1rem;
+  width: 290px;
+  text-indent: 5px;
+  border: solid 1px var(--grey-border);
+  font-family: 'Roboto Mono';
+}
+
+.bottomText {
+  margin-left: 2rem;
+}
+
+button {
+  width: 100%;
+  background-image: 
+  linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+  color: var(--white);
+  border: none; 
+  font-size: 1.25rem;
+  font-weight: 600;
+  font-family: 'Roboto Mono';
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.mainContainer img {
+  padding: 45px 20px;
+}
+
+.memeImg {
+  max-width: 450px;
+  max-height: 900px;
+  margin-left: auto;
+  margin-right: auto;
 }
