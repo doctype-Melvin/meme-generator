@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --gradient-start: #672280;
+  --gradient-end: #A626D3;
+  --white: #fff;
+}
+
+html, body {
+  padding: 0;
+  margin: 0;
+  min-height: 100vh;
+  font-family:  'Roboto Mono', monospace;;
+}
+
+.headerSection {
+  box-shadow: 0px 0px 20px 10px rgb(185, 185, 185);
+}
+
+.headerContainer, 
+.logoSection {
+  display: flex;
+  align-items: center;
+}
+
+.headerContainer {
+  width: 100vw;
+  justify-content: space-between;
+  padding: 15px 30px;
+  background-image: 
+  linear-gradient(to right, var(--gradient-start), var(--gradient-end));
+}
+
+.logoSection, .description {
+  color: var(--white);
+}
+
+.logoSection {
+  min-width: 350px;
+  justify-content: space-between;
+}
+
+.troll {
+  width: 80px;
+}
+
+.title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.description {
+  font-size: 20px;
+}
